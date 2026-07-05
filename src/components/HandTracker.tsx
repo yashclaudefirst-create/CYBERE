@@ -3,6 +3,16 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import Script from 'next/script'
 
+declare global {
+  interface Window {
+    Hands: any;
+    Camera: any;
+    drawConnectors: any;
+    HAND_CONNECTIONS: any;
+    drawLandmarks: any;
+  }
+}
+
 const HandTracker: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
