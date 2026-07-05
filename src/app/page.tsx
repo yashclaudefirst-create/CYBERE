@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import HandTracker from '@/components/HandTracker'
 
 /* ============================================================
    CYBERSECURITY DOMAIN PRESENTATION
@@ -788,6 +789,7 @@ export default function Home() {
   return (
       <div className="cyber-page" suppressHydrationWarning>
         <div className="grid-bg" />
+        <HandTracker />
 
         {/* NAV */}
         <nav className="rail">
